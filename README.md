@@ -323,6 +323,8 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 Se você quiser visualizar o histórico completo de todas as ações feitas em todos os commits, execute `git reflog` no bash.
 </details>
 
+<details>
+
 ## 💻 Aulas Completas
 
 | Aulas | Links |
