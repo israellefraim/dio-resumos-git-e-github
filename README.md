@@ -362,3 +362,5 @@ Se você quiser visualizar o histórico completo de todas as ações feitas em t
 | Configurando o Git | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/versionamento-de-codigo-com-git-e-github/learning/f9b294d2-f8ca-4364-9031-1e897721b3e2?autoplay=1) |
 | Criando e Clonando Repositórios Locais/Remotos | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/versionamento-de-codigo-com-git-e-github/learning/a377a00b-461c-4ab0-8258-3addd2fef14c?autoplay=1) |
 | Gravando Alterações no Repositório Local | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/406684a4-396d-4160-94b9-ead934e18564/learning/599dd3dd-d189-474f-a55c-22f37b4472da?autoplay=1) |
+| Desfazendo Alterações no Repositório Local | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/406684a4-396d-4160-94b9-ead934e18564/learning/3f9f2336-6fd5-44cb-ba39-d1a4f6448023?autoplay=1) |
+| Enviando e Baixando Alterações com o Repositório Remoto | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/406684a4-396d-4160-94b9-ead934e18564/learning/dd17c56e-2327-493c-942a-358a49a26549?autoplay=1) |
