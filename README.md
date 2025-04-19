@@ -49,11 +49,23 @@ Versionamento de código, também conhecido como controle de versão, é o proce
     ```
     <em>(Use o mesmo e-mail vinculado ao GitHub, se aplicável)</em>
 <br><br>
-4. <strong>Verifique as configurações</strong>
+4. <strong>Verifique qual é a branch padrão configurada no Git</strong>
+    ```bash
+    git config --global init.defaultBranch
+    ```
+    <em>Se a branch mostrada for `master`, será necessário trocar pois o GitHub tornou `main` o nome de branch padrão para novos repositórios</em>
+<br><br>
+5. <strong>Renomeie a branch padrão para `main`</strong>
+    ```bash
+    git config --global init.defaultBranch main
+    ```
+    <em>Adicione no final do comando anterior, `main`</em>
+<br><br>
+6. <strong>Verifique as configurações</strong>
     ```bash
     git config --global --list
     ```
-    <em>(Confira se `user.name` e `user.email` estão corretos)</em>
+    <em>(Confira se `user.name`, `user.email` e `init.defaultBranch` estão corretos)</em>
 <br><br>
 
 <strong>💡Observação Final:</strong>
@@ -328,7 +340,6 @@ Se você quiser visualizar o histórico completo de todas as ações feitas em t
 
 <br>Após definir os commits, outro passo muito importante é enviar essas alterações para o repositório remoto. Além disso caso tenha sido feita alguma alteração diretamente no repositório remoto é importante também baixar essas alterações para o repositório local, para garantir que você esteja trabalhando na última versão do projeto.
 <br><br>
-
 <strong>✔️ PASSO A PASSO para enviar os commits para o repositório remoto:  
 1. Renomeie a branch atual para `main` (caso necessário)</strong>  
     ```bash
@@ -350,7 +361,49 @@ Se você quiser visualizar o histórico completo de todas as ações feitas em t
     ```bash
     git pull
     ```
+</details>
 <br>
+<details><summary><strong>TRABALHANDO COM BRANCHES - CRIANDO, MESCLANDO E DELETANDO</strong></summary>
+<br>
+Uma branch é uma linha de desenvolvimento separada de um determinado projeto. É um recurso que permite aos desenvolvedores trabalharem em novas funcionalidades, corrigir erros ou testar ideias sem comprometer o código principal. 
+<br><br>
+
+<strong>✔️ PASSO A PASSO para criar uma nova branch dentro de outra já existente:  
+1. Crie uma nova branch e acesse ela</strong>  
+    ```bash
+    git checkout -b nome-nova-branch
+    ```
+
+    <em>Este comando irá criar e trocar a branch atual pela nova branch nomeada. Além disso, essa nova branch apontará para o mesmo commit da branch de onde ela originou</em>
+<br><br>
+
+<strong>✔️ PASSO A PASSO para mesclar duas branchs:  
+1. Acesse a branch originária que deseja mesclar</strong>
+    ```bash
+    git checkout nome-da-branch
+    ```
+<br>
+
+2. <strong>Mescle as branches inserindo o nome da branch que deseja mesclar com a branch originária</strong>
+    ```bash
+    git merge nome-da-branch
+    ```
+
+    <em>Isso faz com que as alterações feitas na nova branch apareçam na branch originária</em>
+<br><br>
+
+<strong>✔️ PASSO A PASSO para excluir uma branch:  
+1. Liste quais são as branchs ligadas ao repositório</strong>
+    ```bash
+    git branch
+    ```
+<br>
+
+2. <strong>Exclua a branch</strong>
+    ```bash
+    git branch -d nome-da-branch
+    ```
+
 
 </details>
 
@@ -364,3 +417,6 @@ Se você quiser visualizar o histórico completo de todas as ações feitas em t
 | Gravando Alterações no Repositório Local | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/406684a4-396d-4160-94b9-ead934e18564/learning/599dd3dd-d189-474f-a55c-22f37b4472da?autoplay=1) |
 | Desfazendo Alterações no Repositório Local | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/406684a4-396d-4160-94b9-ead934e18564/learning/3f9f2336-6fd5-44cb-ba39-d1a4f6448023?autoplay=1) |
 | Enviando e Baixando Alterações com o Repositório Remoto | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/406684a4-396d-4160-94b9-ead934e18564/learning/dd17c56e-2327-493c-942a-358a49a26549?autoplay=1) |
+| Trabalhando com Branches - Criando, Mesclando, Deletando e Tratando Conflitos | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/versionamento-de-codigo-com-git-e-github/learning/2c7fd2b1-e7c4-4947-9b07-ffcbfb4bd689?autoplay=1) |
+| Trabalhando com Branches - Comandos Úteis no Dia a Dia | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/versionamento-de-codigo-com-git-e-github/learning/80018fab-daac-4917-8527-a6be2e0c3cf0?autoplay=1) |
+| Dicas e Materiais de Apoio | [Vídeo](https://web.dio.me/track/bradesco-java-cloud-native/course/versionamento-de-codigo-com-git-e-github/learning/b2ceffed-9d18-4369-a038-e72be0953455?autoplay=1) |
