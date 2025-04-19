@@ -136,7 +136,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 <br> Depois de alterar ou criar arquivos no seu projeto, é preciso registrar essas mudanças no repositório local para manter o histórico organizado e consultável. Nesta aula, vamos passar por todo o fluxo: verificar alterações, preparar para commit, confirmar no histórico e lidar com arquivos que não devem ser versionados.
 <br><br>
 
-<strong>✔️ PASSO A PASSO para Salvar Alterações no Repositório Local  
+<strong>✔️ PASSO A PASSO para Salvar Alterações no Repositório Local:
 1. Mova ou crie um arquivo no repositório local</strong>
     ```bash
     touch README.md pasta/README.md
@@ -197,7 +197,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 <br> No nosso dia a dia pode acontecer de inicializarmos um repositório git em uma pasta errada, ou adicionarmos uma mensagem ou um arquivo indesejado a um commit. Saber reverter esse tipo de problema é essencial antes de subir um arquivo para o repositório remoto.
 <br><br>
 
-<strong>❗PASSO A PASSO para resolver a execução do `git init` na pasta errada
+<strong>❗PASSO A PASSO para resolver a execução do `git init` na pasta errada:
 1. Exlua o diretório `.git` do repositório iniciado por engano</strong>
     ```bash
     rm -rf .git
@@ -213,7 +213,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 
 <br>
 
-<strong>❗PASSO A PASSO de como remover um arquivo da área de preparação se não quiser commitar ele
+<strong>❗PASSO A PASSO de como remover um arquivo da área de preparação:
 1. Verifique quais arquivos estão na área de preparação</strong>  
     ```bash
     git status
@@ -228,7 +228,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
     <em>Esse comando faz com que o arquivo removido se torne um arquivo não rastreado que consequentemente não pode ser commitado</em>
 <br><br>
 
-<strong>❗PASSO A PASSO para restaurar um arquivo/pasta modificado, para a versão anterior
+<strong>❗PASSO A PASSO para restaurar um arquivo/pasta modificado, para a versão anterior:
 1. Verifique qual arquivo/pasta foi modificado</strong>
     ```bash
     git status
@@ -245,7 +245,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 
 <br>
 
-<strong>❗PASSO A PASSO de como alterar a mensagem do último commit
+<strong>❗PASSO A PASSO de como alterar a mensagem do último commit:
 1. Verifique o histórico dos commits</strong>
     ```bash
     git log
@@ -260,7 +260,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 
 <br>
 
-<strong>❗PASSO A PASSO de como desfazer um commit fazendo seus arquivos voltarem para a área de preparação
+<strong>❗PASSO A PASSO de como desfazer um commit fazendo seus arquivos voltarem para a área de preparação:
 1. Copie o hash (código) do commit que você deseja</strong>  
     - Execute `git log` no bash e copie o hash (código) do commit que você deseja que sirva de sinalização, para os commits posteriores a esse serem desfeitos. 
 <br><br>
@@ -280,7 +280,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 
 <br>
 
-<strong>❗PASSO A PASSO de como desfazer um commit fazendo seus arquivos se tornarem arquivos não rastreados
+<strong>❗PASSO A PASSO de como desfazer um commit fazendo seus arquivos se tornarem arquivos não rastreados:
 1. Copie o hash (código) do commit que você deseja</strong>  
     - Execute `git log` no bash e copie o hash (código) do commit que você deseja que sirva de sinalização, para os commits posteriores a esse serem desfeitos. 
 <br><br>
@@ -300,7 +300,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 
 <br>
 
-<strong>❗PASSO A PASSO de como desfazer um commit fazendo seus arquivos serem apagados
+<strong>❗PASSO A PASSO de como desfazer um commit fazendo seus arquivos serem apagados:
 1. Copie o hash (código) do commit que você deseja</strong>  
     - Execute `git log` no bash e copie o hash (código) do commit que você deseja que sirva de sinalização, para os commits posteriores a esse serem desfeitos. 
 <br><br>
@@ -323,7 +323,36 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 Se você quiser visualizar o histórico completo de todas as ações feitas em todos os commits, execute `git reflog` no bash.
 </details>
 
-<details>
+<br>
+<details><summary><strong>ENVIANDO E BAIXANDO ALTERAÇÕES COM O REPOSITÓRIO REMOTO</strong></summary>
+
+<br>Após definir os commits, outro passo muito importante é enviar essas alterações para o repositório remoto. Além disso caso tenha sido feita alguma alteração diretamente no repositório remoto é importante também baixar essas alterações para o repositório local, para garantir que você esteja trabalhando na última versão do projeto.
+<br><br>
+
+<strong>✔️ PASSO A PASSO para enviar os commits para o repositório remoto:  
+1. Renomeie a branch atual para `main` (caso necessário)</strong>  
+    ```bash
+    git branch -M main
+    ```
+
+    <em>Caso esteja trabalhando na branch `master`, este comando irá forçar uma renomeação da branch para `main`, apenas no repositório atual</em>
+<br><br>
+2. <strong>Envie as alterações do repositório local para o remoto</strong>
+    ```bash
+    git push -u origin main
+    ```
+
+    <em>Este comando é responsável de subir os arquivos no servidor</em>
+<br><br>
+
+<strong>✔️ PASSO A PASSO para Baixar as alterações realizada no Repositório Remoto para o Repositório Local  
+1. Puxe as alterações do repositório remoto ao local</strong>
+    ```bash
+    git pull
+    ```
+<br>
+
+</details>
 
 ## 💻 Aulas Completas
 
