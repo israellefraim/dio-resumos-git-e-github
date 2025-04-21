@@ -166,7 +166,7 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 
 3. <strong>Adicione arquivos/pastas ao `.gitignore` para não serem rastreados</strong>
     ```bash
-    echo pasta/ > .gitignore
+    echo pasta/ >> .gitignore
     ```
 
     <em>Se quiser ignorar um arquivo ou todos os arquivos de um determinado tipo, use `nome_do_arquivo.tipo` ou `*.tipo` (Ex.: `*.java`)</em>
