@@ -13,7 +13,11 @@ Repositório para armazenar resumos sobre Git e GitHub do curso Versionamento de
 
 ## ✍🏻 Resumos das Aulas
 <details>
-<summary><strong>O QUE É VERSIONAMENTO DE CÓDIGO</strong></summary>
+<summary>
+  
+  ### O QUE É VERSIONAMENTO DE CÓDIGO
+  
+  </summary>
 <br>
 
 Versionamento de código, também conhecido como controle de versão, é o processo de registrar e gerenciar as alterações feitas em um código.
@@ -26,9 +30,12 @@ Versionamento de código, também conhecido como controle de versão, é o proce
 | Como funciona | Utiliza repositórios locais e remotos para armazenar as versões do código |
 | Vantagens | Permite trabalhar em equipe, reverter a versões anteriores, testar novas funcionalidades |
 </details>
-<br>
 <details>
-<summary><strong>CONFIGURANDO O GIT</strong></summary>
+<summary>
+  
+  ### CONFIGURANDO O GIT
+  
+</summary>
 <br>Antes de começar a usar o Git, é essencial configurar seu nome e e-mail. Essas informações identificam suas alterações em projetos versionados.  
 <br><br>
 
@@ -71,9 +78,12 @@ Versionamento de código, também conhecido como controle de versão, é o proce
 <strong>💡Observação Final:</strong>
 Essas configurações são globais e aplicam-se a todos os projetos no seu computador. Para alterá-las, repita os comandos com os novos dados.
 </details>
-<br>
 <details>
-<summary><strong>CRIANDO E CLONANDO REPOSITÓRIOS LOCAIS/REMOTOS</summary></strong>
+<summary>
+  
+  ### CRIANDO E CLONANDO REPOSITÓRIOS LOCAIS/REMOTOS
+  
+</summary>
 <br>Para trabalhar com Git, você pode criar um repositório local do zero e conectá-lo a um remoto (GitHub) ou clonar um repositório existente. Vamos ver ambos os métodos!
 <br><br>
 
@@ -143,8 +153,11 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
   - Se a URL do repositório remoto está correta (copia do GitHub).
 
 </details>
-<br>
-<details><summary><strong>SALVANDO ALTERAÇÕES NO REPOSITÓRIO LOCAL</strong></summary>
+<details><summary>
+  
+  ### SALVANDO ALTERAÇÕES NO REPOSITÓRIO LOCAL
+
+</summary>
 <br> Depois de alterar ou criar arquivos no seu projeto, é preciso registrar essas mudanças no repositório local para manter o histórico organizado e consultável. Nesta aula, vamos passar por todo o fluxo: verificar alterações, preparar para commit, confirmar no histórico e lidar com arquivos que não devem ser versionados.
 <br><br>
 
@@ -203,9 +216,11 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 - Use o `.gitignore` para manter seu repositório limpo de arquivos desnecessários.
 - Utilize arquivos como `.gitkeep` para garantir que pastas vazias sejam mantidas no histórico.
 </details>
-
-<br>
-<details><summary><strong>DESFAZENDO ALTERAÇÕES NO REPOSITÓRIO LOCAL</strong></summary>
+<details><summary>
+  
+  ### DESFAZENDO ALTERAÇÕES NO REPOSITÓRIO LOCAL
+  
+  </summary>
 <br> No nosso dia a dia pode acontecer de inicializarmos um repositório git em uma pasta errada, ou adicionarmos uma mensagem ou um arquivo indesejado a um commit. Saber reverter esse tipo de problema é essencial antes de subir um arquivo para o repositório remoto.
 <br><br>
 
@@ -334,9 +349,11 @@ Essas configurações são globais e aplicam-se a todos os projetos no seu compu
 <strong>💡Observação Final:</strong>
 Se você quiser visualizar o histórico completo de todas as ações feitas em todos os commits, execute `git reflog` no bash.
 </details>
-
-<br>
-<details><summary><strong>ENVIANDO E BAIXANDO ALTERAÇÕES COM O REPOSITÓRIO REMOTO</strong></summary>
+<details><summary>
+  
+  ### ENVIANDO E BAIXANDO ALTERAÇÕES COM O REPOSITÓRIO REMOTO
+  
+  </summary>
 
 <br>Após definir os commits, outro passo muito importante é enviar essas alterações para o repositório remoto. Além disso caso tenha sido feita alguma alteração diretamente no repositório remoto é importante também baixar essas alterações para o repositório local, para garantir que você esteja trabalhando na última versão do projeto.
 <br><br>
@@ -362,8 +379,11 @@ Se você quiser visualizar o histórico completo de todas as ações feitas em t
     git pull
     ```
 </details>
-<br>
-<details><summary><strong>TRABALHANDO COM BRANCHES - CRIANDO, MESCLANDO E DELETANDO</strong></summary>
+<details><summary>
+  
+  ### TRABALHANDO COM BRANCHES - CRIANDO, MESCLANDO E DELETANDO
+  
+  </summary>
 <br>
 Uma branch é uma linha de desenvolvimento separada de um determinado projeto. É um recurso que permite aos desenvolvedores trabalharem em novas funcionalidades, corrigir erros ou testar ideias sem comprometer o código principal. 
 <br><br>
@@ -404,8 +424,8 @@ Uma branch é uma linha de desenvolvimento separada de um determinado projeto. �
     git branch -d nome-da-branch
     ```
 
-
 </details>
+<br>
 
 ## 💻 Aulas Completas
 
